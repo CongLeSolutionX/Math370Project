@@ -14,7 +14,7 @@
 % Output:
 %   dx - First derivative: the rate of change of the populations
  
-function dx = sir(t, x)
+function dx = SIRmodel(x)
   dx = [0; 0; 0];
   beta = .003; 
   delta = 1;
