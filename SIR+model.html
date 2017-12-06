@@ -8451,15 +8451,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box
+/* This file is a compatability layer.  It allows the usage of flexible box 
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this
+`Modern browsers` comments below).  Browsers that are known to implement this 
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+
+    Internet Explorer 11+ 
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11233,7 +11233,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for
+  /* This injects handle bars (a short, wide = symbol) for 
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11676,7 +11676,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-
+    
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11730,14 +11730,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  }
-  div.output_wrapper {
+  } 
+  div.output_wrapper { 
     display: block;
-    page-break-inside: avoid;
+    page-break-inside: avoid; 
   }
-  div.output {
+  div.output { 
     display: block;
-    page-break-inside: avoid;
+    page-break-inside: avoid; 
   }
 }
 </style>
@@ -11771,9 +11771,17 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="SIR-Function-Model">SIR Function Model<a class="anchor-link" href="#SIR-Function-Model">&#182;</a></h1>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-matlab"><pre><span></span><span class="c">%%file SIRwithODE45.m</span>
@@ -11785,8 +11793,8 @@ div#notebook {
 <span class="n">tspan</span> <span class="p">=</span> <span class="p">[</span><span class="mi">0</span> <span class="mi">60</span><span class="p">];</span>
 
 <span class="c">% S is y(1), I is y(2)</span>
-<span class="p">[</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">]</span> <span class="p">=</span> <span class="n">ode45</span><span class="p">(@(</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="p">[</span><span class="o">-</span><span class="p">(</span><span class="nb">beta</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="o">-</span> <span class="n">v</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-    <span class="nb">beta</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="nb">gamma</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">m</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="p">[</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">]</span> <span class="p">=</span> <span class="n">ode45</span><span class="p">(@(</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="p">[</span><span class="o">-</span><span class="p">(</span><span class="nb">beta</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="o">-</span> <span class="n">v</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> 
+    <span class="nb">beta</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="nb">gamma</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">m</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span> 
     <span class="nb">gamma</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">v</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">m</span><span class="o">*</span><span class="n">y</span><span class="p">(</span><span class="mi">2</span><span class="p">)],</span> <span class="n">tspan</span><span class="p">,</span> <span class="n">y0</span><span class="p">);</span>
 </pre></div>
 
@@ -11804,13 +11812,22 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-
+<pre>Created file &#39;/Users/navievurdien/Math370Project/SIRwithODE45.m&#39;.
+</pre>
 </div>
 </div>
 
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Main-Function">Main Function<a class="anchor-link" href="#Main-Function">&#182;</a></h1>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -12210,11 +12227,27 @@ QmCC
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Fixed-Point-1">Fixed Point 1<a class="anchor-link" href="#Fixed-Point-1">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Fixed-Point-2">Fixed Point 2<a class="anchor-link" href="#Fixed-Point-2">&#182;</a></h1>
+</div>
+</div>
+</div>
     </div>
   </div>
 </body>
 
-
+ 
 
 
 </html>
